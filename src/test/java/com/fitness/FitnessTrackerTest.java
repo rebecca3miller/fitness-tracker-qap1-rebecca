@@ -41,4 +41,29 @@ public class FitnessTrackerTest {
 
         Assertions.assertEquals(0, tracker.getWorkouts().size());
     }
+
+    // Test adding a goal //
+    @Test
+    public void testAddGoal() {
+        FitnessTracker tracker = new FitnessTracker();
+        Goal goal = new Goal();
+
+        goal.setId(1);
+        goal.setName("Complete 5 workouts");
+        goal.setTargetWorkouts(5);
+
+        tracker.addGoal(goal);
+
+        Assertions.assertEquals(1, tracker.getGoals().size());
+    }
+
+    // Test adding a null goal //
+    @Test
+    public void testAddNullGoal() {
+        FitnessTracker tracker = new FitnessTracker();
+
+        tracker.addGoal(null);
+
+        Assertions.assertEquals(0, tracker.getGoals().size());
+    }
 }
