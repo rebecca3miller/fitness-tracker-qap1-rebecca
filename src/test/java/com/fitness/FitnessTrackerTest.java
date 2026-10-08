@@ -66,4 +66,33 @@ public class FitnessTrackerTest {
 
         Assertions.assertEquals(0, tracker.getGoals().size());
     }
+
+    // Test a goal that has not been reached //
+    @Test
+    public void testGoalNotReached() {
+        FitnessTracker tracker = new FitnessTracker();
+        Goal goal = new Goal();
+
+        goal.setId(1);
+        goal.setName("Complete 5 workouts");
+        goal.setTargetWorkouts(5);
+
+        Assertions.assertFalse(tracker.isGoalReached(goal));
+    }
+
+    // Test a goal that has been reached //
+    @Test
+    public void testGoalReached() {
+        FitnessTracker tracker = new FitnessTracker();
+        Goal goal = new Goal();
+
+        goal.setId(2);
+        goal.setName("Complete 1 workout");
+        goal.setTargetWorkouts(1);
+
+        Workout workout = new Workout();
+        tracker.addWorkout(workout);
+
+        Assertions.assertTrue(tracker.isGoalReached(goal));
+    }
 }
