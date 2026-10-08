@@ -95,4 +95,25 @@ public class FitnessTrackerTest {
 
         Assertions.assertTrue(tracker.isGoalReached(goal));
     }
+
+    // Test checking a null goal //
+    @Test
+    public void testNullGoalNotReached() {
+        FitnessTracker tracker = new FitnessTracker();
+
+        Assertions.assertFalse(tracker.isGoalReached(null));
+    }
+
+    // Test a goal with an invalid target //
+    @Test
+    public void testInvalidGoalTarget() {
+        FitnessTracker tracker = new FitnessTracker();
+        Goal goal = new Goal();
+
+        goal.setId(3);
+        goal.setName("Invalid Goal");
+        goal.setTargetWorkouts(0);
+
+        Assertions.assertFalse(tracker.isGoalReached(goal));
+    }
 }
