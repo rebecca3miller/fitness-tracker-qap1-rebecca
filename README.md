@@ -65,6 +65,13 @@ The workflow runs when changes are pushed to the develop branch or when pull req
 
 The Maven builds and automated tests completed successfully.
 
+# Git Branching and Pull Requests
+For this project, I used a develop branch to work on my code before merging it into the main branch.
+
+I made regular commits as I worked on the fitness tracker and unit tests. Once my work was completed, I created a pull request to merge the develop branch into main.
+
+I also used GitHub Actions to check that my Maven build and unit tests passed successfully. This helped me understand how branching and pull requests can be used to manage code changes safely.
+
 # Running the Tests
 To run the tests locally using Maven: mvn test
 
