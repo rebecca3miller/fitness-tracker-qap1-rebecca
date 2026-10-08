@@ -54,6 +54,8 @@ JUnit 5 was used to test the fitness tracker.
 
 10 unit tests were created to check different scenarios, including adding workouts, adding goals, checking empty lists, handling invalid inputs, and checking whether goals have been reached.
 
+I tested both positive and negative scenarios to make sure my fitness tracker works correctly. This included checking that workouts and goals could be added successfully, that null values were not added, and that goals were only marked as reached when the required number of workouts was completed.
+
 All 10 tests passed successfully.
 
 # GitHub Actions
