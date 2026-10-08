@@ -15,11 +15,31 @@ A simple Java fitness tracker application created using classes, constructors, a
 - Git and GitHub
 - GitHub Actions
 
+# Dependencies
+For this project, I used Maven to manage the dependencies and build the Java application.
+* JUnit 5: Used to create and run the 10 unit tests for my fitness tracker.
+* Maven: Used to manage the project dependencies and run the tests.
+* Java 21: The Java version used to develop the application.
+
+The JUnit 5 dependencies are configured in the pom.xml file and downloaded through Maven Central. This makes it easier to manage the project and run the tests without manually downloading the libraries.
+
 # Project Structure
 The project contains three main Java classes:
 * Workout.java - Represents a workout
 * Goal.java - Represents a fitness goal
 * FitnessTracker.java - Manages workouts and goals and checks whether goals have been reached
+
+# Clean Code Practices
+I tried to keep my code simple, organized, and easy to understand throughout this project. Here are three examples of clean coding practices I used.
+
+1. Meaningful Names
+I used clear names for my variables and methods, such as getWorkouts(), addWorkout(), and goals. This makes it easier to understand what each method does     without needing a lot of extra explanation.
+
+2. Input Validation
+In my addWorkout() and addGoal() methods, I used if statements to check that the objects are not null before adding them to the array lists. This helps prevent invalid data from being added to the fitness tracker.
+
+3. Simple and Readable Methods
+My isGoalReached() method checks if a goal is valid before comparing the number of workouts completed with the target. I kept the logic straightforward so it is easier to read, test, and maintain.
 
 # Unit Testing
 JUnit 5 was used to test the fitness tracker.
@@ -42,3 +62,8 @@ To run the tests locally using Maven: mvn test
 This project helped me practice working with Java classes, Array Lists, unit testing, Maven, and GitHub Actions. It also helped me understand how automated testing can be used to check that code is working correctly before merging changes into the main branch. 
 
 In a previous project last semester, I accidentally merged changes that I wasn't supposed to, which caused some issues with my work. Because of that experience, I really liked learning how to use branch protection, pull requests, and Maven with GitHub Actions. It gave me a better understanding of how to manage changes safely and avoid making the same mistake again.
+
+# Problems Encountered
+I didn't run into any major problems while completing this project. I did spend some extra time making sure Maven and GitHub Actions were configured correctly and that all my unit tests passed.
+
+I also wanted to make sure I was following the correct branching and pull request workflow, especially because I had issues with merging changes in a previous project.
