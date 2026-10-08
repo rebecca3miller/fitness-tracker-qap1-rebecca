@@ -35,11 +35,19 @@ I tried to keep my code simple, organized, and easy to understand throughout thi
 1. Meaningful Names
 I used clear names for my variables and methods, such as getWorkouts(), addWorkout(), and goals. This makes it easier to understand what each method does     without needing a lot of extra explanation.
 
+<img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/a9d46de5-d385-4980-a984-4a2dfbd5ed04" />
+
+
 2. Input Validation
 In my addWorkout() and addGoal() methods, I used if statements to check that the objects are not null before adding them to the array lists. This helps prevent invalid data from being added to the fitness tracker.
 
+<img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/f84ce860-57b6-45cd-bd22-00ae3c5b90e7" />
+
 3. Simple and Readable Methods
 My isGoalReached() method checks if a goal is valid before comparing the number of workouts completed with the target. I kept the logic straightforward so it is easier to read, test, and maintain.
+
+<img width="4032" height="3024" alt="image" src="https://github.com/user-attachments/assets/611174e1-6eb6-4fb1-9856-83fdcc8d544b" />
+
 
 # Unit Testing
 JUnit 5 was used to test the fitness tracker.
